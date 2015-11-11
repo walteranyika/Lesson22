@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,12 @@ public class CustomAdapter extends BaseAdapter {
 			viewHolder = new ViewHolder();
 			viewHolder.textViewQuote = (TextView) convertView.findViewById(R.id.textViewQuote);
 			viewHolder.textViewSpeaker = (TextView) convertView.findViewById(R.id.textViewSpeaker);
+			//load Fonts
+			Typeface font1=Typeface.createFromAsset(mContext.getAssets(), "fonts/learning.otf");
+			Typeface font2=Typeface.createFromAsset(mContext.getAssets(), "fonts/lovers.otf");
+			viewHolder.textViewQuote.setTypeface(font1);
+			viewHolder.textViewSpeaker.setTypeface(font2);
+			
 			convertView.setTag(viewHolder);
 		} else {
 			viewHolder = (ViewHolder) convertView.getTag();

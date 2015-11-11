@@ -4,5 +4,9 @@
     <string name="app_name">Lesson22</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    <string-array name="data">
+        <item>Success is a lousy teacher. It seduces smart people into thinking they cant lose. </item>
+        
+    </string-array>
+        <string name="refresh">Refresh</string>
 </resources>

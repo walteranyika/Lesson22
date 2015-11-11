@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Quote"
+        android:gravity="center_horizontal"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -16,6 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Speaker"
+        android:gravity="right"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
+    
+    
+    
+    
 </LinearLayout>

@@ -52,7 +52,7 @@ public class Database extends SQLiteOpenHelper {
 	{
 		ArrayList<Item> data=new ArrayList<Item>();
 		SQLiteDatabase db=this.getReadableDatabase();
-		String sql="SELECT * FROM quotes LIMIT 20";
+		String sql="SELECT * FROM quotes ORDER BY random() LIMIT 20";
 		Cursor cursor= db.rawQuery(sql, null);
 		if(cursor.moveToFirst())
 		{
