@@ -65,6 +65,7 @@ public class Database extends SQLiteOpenHelper {
 			data.add(t);			
 		  }while(cursor.moveToNext());	
 		}
+		db.close();
 		return data;
 	}
 
